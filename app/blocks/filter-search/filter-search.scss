@@ -1,0 +1,25 @@
+.filter-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to('tablet') {
+    order: 5;
+  }
+
+  &__button {
+    width: 270px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__link {
+    color: $color-gray;
+    font-family: $NerisLight;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}

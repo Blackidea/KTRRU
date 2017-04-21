@@ -1,0 +1,25 @@
+include ../container/container
+include ../division/division
+include ../filter-search/filter-search
+include ../filter-control/filter-control
+include ../filter-price/filter-price
+
+mixin filter()
+  +b.filter&attributes(attributes)
+    +container()
+      +filter-control()
+      +e.content#tabs
+        +e.FORM.items._active#tabs-1
+          +e.item._type
+          +e.item._model
+          +filter-price().filter__item
+          +e.item._vendor
+          +e.item._range
+          +filter-search().filter__item
+        +e.items#tabs-2
+          +e.item._type 123
+          +e.item._model 123
+          +filter-price().filter__item
+          +e.item._vendor
+          +e.item._range
+          +filter-search().filter__item

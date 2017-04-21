@@ -59,3 +59,13 @@
     local('GothamPro-Light'),
     url('../fonts/GothamProLight.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Neris LightItalic';
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local('Neris LightItalic'),
+    local('Neris-LightItalic'),
+    url('../fonts/Neris-LightItalic.woff') format('woff');
+}

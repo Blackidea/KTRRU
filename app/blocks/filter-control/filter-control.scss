@@ -1,0 +1,18 @@
+.division {
+
+  @include respond-to('tablet') {
+
+    &_arrow-left {
+      font-size: rem(16px);
+
+      &::before {
+        border-left: $small-border;
+        border-right: $small-border;
+        border-top: $big-border;
+        transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+      }
+    }
+  }
+}

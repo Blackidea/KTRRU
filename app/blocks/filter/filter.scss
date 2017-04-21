@@ -1,0 +1,59 @@
+.filter {
+
+  .container {
+    display: flex;
+
+    @include respond-to('tablet') {
+      flex-direction: column;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+
+    @include respond-to('tablet') {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: 270px;
+    height: 60px;
+    border: 1px solid #ccc;
+
+    &:nth-child(3n) {
+      border: none;
+    }
+
+    &_type {
+      @include respond-to('tablet') {
+        order: 0;
+      }
+    }
+
+    &_model {
+      @include respond-to('tablet') {
+        order: 2;
+      }
+    }
+
+    &_vendor {
+      @include respond-to('tablet') {
+        order: 1;
+      }
+    }
+
+    &_range {
+      @include respond-to('tablet') {
+        order: 3;
+      }
+    }
+  }
+}
+
+#tabs-2 {
+  display: none;
+}

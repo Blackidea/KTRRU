@@ -1,0 +1,8 @@
+include ../division/division
+
+mixin filter-control()
+  +b.filter-control&attributes(atributes)
+    +e.A(href='#tabs-1').item
+      +division('Купить')._active._arrow-left
+    +e.A(href='#tabs-2').item
+      +division('Арендовать')._arrow-left

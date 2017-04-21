@@ -1,0 +1,10 @@
+mixin filter-price()
+  +b.filter-price&attributes(attributes)
+    +e.SPAN.text Цена
+    +e.INPUT(type='text' placeholder='от')
+    +e.SPAN.text &#8212
+    +e.INPUT(type='text' placeholder='до')
+    +e.currency
+      +e.SPAN.item
+        +e.IMG(src='../assets/images/rouble.png')
+      +e.SPAN.item
